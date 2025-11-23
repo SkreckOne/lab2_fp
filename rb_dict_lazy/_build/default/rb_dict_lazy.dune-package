@@ -1,0 +1,4 @@
+(lang dune 3.20)
+(name rb_dict_lazy)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (rb_dict_lazy)))

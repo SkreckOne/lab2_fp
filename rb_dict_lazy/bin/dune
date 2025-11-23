@@ -1,0 +1,4 @@
+(executable
+ (public_name rb_dict_lazy)
+ (name main)
+ (libraries rb_dict_lazy))

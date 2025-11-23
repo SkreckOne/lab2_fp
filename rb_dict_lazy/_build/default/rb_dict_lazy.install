@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/rb_dict_lazy/META"
+  "_build/install/default/lib/rb_dict_lazy/dune-package"
+  "_build/install/default/lib/rb_dict_lazy/opam"
+]
+bin: [
+  "_build/install/default/bin/rb_dict_lazy"
+]
