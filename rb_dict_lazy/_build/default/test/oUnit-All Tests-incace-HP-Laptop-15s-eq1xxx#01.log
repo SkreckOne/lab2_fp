@@ -1,0 +1,12 @@
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Start test All Tests:0:Unit Tests:0:empty.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Test All Tests:0:Unit Tests:0:empty is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: End test All Tests:0:Unit Tests:0:empty.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Start test All Tests:0:Unit Tests:5:filter.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Test All Tests:0:Unit Tests:5:filter is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: End test All Tests:0:Unit Tests:5:filter.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Start test All Tests:3:Property: Monoid Associativity.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: 
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: law Property: Monoid Associativity: 500 relevant cases (500 total)
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: 
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Test All Tests:3:Property: Monoid Associativity is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: End test All Tests:3:Property: Monoid Associativity.

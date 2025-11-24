@@ -1,0 +1,157 @@
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Runner: processes
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Chooser: simple
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration suite_name = "All Tests"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration cache_filename = "/home/incace/Desktop/5_sem/lab2_fp/rb_dict_lazy/_build/default/test/oUnit-$(suite_name).cache"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration run_gc_full_major = "true"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration seed = "-1"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration display = "true"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration results_style_1_X = "false"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration testdata_dir = "none"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration health_check_interval = "1."
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration verbose = "false"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration chooser = "simple"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration output_html_dir = "none"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration processes_kill_period = "5."
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration runner = "processes"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration shards = "4"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration processes_grace_period = "5."
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration qcheck_verbose = "true"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration log_encoding = "utf-8"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration output_junit_file = "none"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration ci = "false"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration qcheck_long = "false"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Configuration output_file = "/home/incace/Desktop/5_sem/lab2_fp/rb_dict_lazy/_build/default/test/oUnit-$(suite_name)-$(shard_id).log"
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Using 4 workers maximum.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Starting worker number incace-HP-Laptop-15s-eq1xxx#01.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Worker incace-HP-Laptop-15s-eq1xxx#01 started.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Starting worker number incace-HP-Laptop-15s-eq1xxx#02.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Worker incace-HP-Laptop-15s-eq1xxx#02 started.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Starting worker number incace-HP-Laptop-15s-eq1xxx#03.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Worker incace-HP-Laptop-15s-eq1xxx#03 started.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Starting worker number incace-HP-Laptop-15s-eq1xxx#04.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Worker incace-HP-Laptop-15s-eq1xxx#04 started.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:0:Unit Tests:3:rebuild_trigger, All Tests:0:Unit Tests:2:remove, All Tests:0:Unit Tests:1:add_find, All Tests:0:Unit Tests:0:empty.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Start test All Tests:0:Unit Tests:0:empty.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: Start test All Tests:0:Unit Tests:2:remove.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:0:Unit Tests:3:rebuild_trigger, All Tests:0:Unit Tests:2:remove, All Tests:0:Unit Tests:1:add_find, All Tests:0:Unit Tests:0:empty.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Test All Tests:0:Unit Tests:0:empty is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#02 I: Start test All Tests:0:Unit Tests:1:add_find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: Test All Tests:0:Unit Tests:2:remove is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#04 I: Start test All Tests:0:Unit Tests:3:rebuild_trigger.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:0:Unit Tests:3:rebuild_trigger, All Tests:0:Unit Tests:2:remove, All Tests:0:Unit Tests:1:add_find, All Tests:0:Unit Tests:0:empty.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: End test All Tests:0:Unit Tests:0:empty.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#02 I: Test All Tests:0:Unit Tests:1:add_find is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: End test All Tests:0:Unit Tests:2:remove.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#04 I: Test All Tests:0:Unit Tests:3:rebuild_trigger is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:0:Unit Tests:3:rebuild_trigger, All Tests:0:Unit Tests:2:remove, All Tests:0:Unit Tests:1:add_find, All Tests:0:Unit Tests:0:empty.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#02 I: End test All Tests:0:Unit Tests:1:add_find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#04 I: End test All Tests:0:Unit Tests:3:rebuild_trigger.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:0:Unit Tests:5:filter, All Tests:0:Unit Tests:4:fold, All Tests:0:Unit Tests:3:rebuild_trigger, All Tests:0:Unit Tests:1:add_find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map, All Tests:0:Unit Tests:5:filter, All Tests:0:Unit Tests:4:fold.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: Start test All Tests:0:Unit Tests:4:fold.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Start test All Tests:0:Unit Tests:5:filter.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map, All Tests:0:Unit Tests:5:filter, All Tests:0:Unit Tests:4:fold.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#02 I: Start test All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map, All Tests:0:Unit Tests:5:filter, All Tests:0:Unit Tests:4:fold.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: Test All Tests:0:Unit Tests:4:fold is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map, All Tests:0:Unit Tests:5:filter, All Tests:0:Unit Tests:4:fold.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: End test All Tests:0:Unit Tests:4:fold.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map, All Tests:0:Unit Tests:5:filter, All Tests:0:Unit Tests:4:fold.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map, All Tests:0:Unit Tests:5:filter.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: Start test All Tests:2:Property: Monoid Identity.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map, All Tests:0:Unit Tests:5:filter.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Test All Tests:0:Unit Tests:5:filter is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map, All Tests:0:Unit Tests:5:filter.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: End test All Tests:0:Unit Tests:5:filter.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map, All Tests:0:Unit Tests:5:filter.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 4 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Start test All Tests:3:Property: Monoid Associativity.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 4 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#04 I: Start test All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 4 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#04 I: Test All Tests:0:Unit Tests:6:map is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 4 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#04 I: End test All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 4 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 4 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find, All Tests:0:Unit Tests:6:map.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 3 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 3 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 3 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 3 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 3 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 3 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: 
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: law Property: Monoid Associativity: 500 relevant cases (500 total)
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: 
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 3 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 3 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: Test All Tests:3:Property: Monoid Associativity is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 3 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 3 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#01 I: End test All Tests:3:Property: Monoid Associativity.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 3 tests running : All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 3 tests running: All Tests:3:Property: Monoid Associativity, All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 2 tests running : All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: 
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: law Property: Monoid Identity: 500 relevant cases (500 total)
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: 
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 2 tests running : All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: Test All Tests:2:Property: Monoid Identity is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 2 tests running : All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#03 I: End test All Tests:2:Property: Monoid Identity.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 2 tests running : All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: All Tests:2:Property: Monoid Identity, All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 1 tests running : All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 1 tests running: All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#02 I: 
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#02 I: law Property: Insert & Find: 1000 relevant cases (1000 total)
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#02 I: 
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 1 tests running : All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 1 tests running: All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#02 I: Test All Tests:1:Property: Insert & Find is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 1 tests running : All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 1 tests running: All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#02 I: End test All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Still 1 tests running : All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 1 tests running: All Tests:1:Property: Insert & Find.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: 0 tests running: .
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Worker incace-HP-Laptop-15s-eq1xxx#04 has ended.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Worker incace-HP-Laptop-15s-eq1xxx#01 died unexpectedly.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Worker incace-HP-Laptop-15s-eq1xxx#03 died unexpectedly.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Worker incace-HP-Laptop-15s-eq1xxx#02 died unexpectedly.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Used 4 worker during test execution.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Run 3 tests with shard incace-HP-Laptop-15s-eq1xxx#01.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Run 3 tests with shard incace-HP-Laptop-15s-eq1xxx#03.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Run 2 tests with shard incace-HP-Laptop-15s-eq1xxx#02.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Run 2 tests with shard incace-HP-Laptop-15s-eq1xxx#04.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Check health of shard incace-HP-Laptop-15s-eq1xxx#01, 10 times.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Check health of shard incace-HP-Laptop-15s-eq1xxx#03, 6 times.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Check health of shard incace-HP-Laptop-15s-eq1xxx#02, 2 times.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Check health of shard incace-HP-Laptop-15s-eq1xxx#04, 15 times.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: ==============
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Summary:
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Test All Tests:1:Property: Insert & Find is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Test All Tests:2:Property: Monoid Identity is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Test All Tests:3:Property: Monoid Associativity is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Test All Tests:0:Unit Tests:6:map is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Test All Tests:0:Unit Tests:5:filter is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Test All Tests:0:Unit Tests:4:fold is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Test All Tests:0:Unit Tests:3:rebuild_trigger is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Test All Tests:0:Unit Tests:1:add_find is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Test All Tests:0:Unit Tests:2:remove is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Test All Tests:0:Unit Tests:0:empty is successful.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Ran: 10 tests in: 0.46 seconds.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Cases: 10.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Tried: 10.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Errors: 0.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Failures: 0.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Skip: 0.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Todo: 0.
+2025-11-24T14:49:38+00:00 incace-HP-Laptop-15s-eq1xxx#00 I: Timeout: 0.
