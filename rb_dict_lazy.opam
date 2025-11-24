@@ -14,6 +14,9 @@ depends: [
   "ocaml"
   "odoc" {with-doc}
   "ocamlformat" {= "0.27.0"}
+  "ounit2"
+  "qcheck-core"
+  "qcheck-ounit"
 ]
 build: [
   ["dune" "subst"] {dev}
