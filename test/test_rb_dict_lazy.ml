@@ -9,9 +9,7 @@ end
 
 module Dict = Rb_dict_lazy.Make (IntKey)
 
-let dict_from_list l =
-  List.fold_left (fun acc (k, v) -> Dict.add k v acc) Dict.empty l
-
+let dict_from_list l = List.fold_left (fun acc (k, v) -> Dict.add k v acc) Dict.empty l
 let dict_eq val_cmp d1 d2 = Dict.compare val_cmp d1 d2 = 0
 
 let test_empty _ =
@@ -40,14 +38,10 @@ let test_remove _ =
 
 let test_lazy_rebuild_trigger _ =
   let n = 100 in
-  let rec build_up i acc =
-    if i > n then acc else build_up (i + 1) (Dict.add i i acc)
-  in
+  let rec build_up i acc = if i > n then acc else build_up (i + 1) (Dict.add i i acc) in
   let d_full = build_up 1 Dict.empty in
 
-  let rec tear_down i acc =
-    if i > 60 then acc else tear_down (i + 1) (Dict.remove i acc)
-  in
+  let rec tear_down i acc = if i > 60 then acc else tear_down (i + 1) (Dict.remove i acc) in
   let d_cleaned = tear_down 1 d_full in
 
   assert_equal None (Dict.find_opt 10 d_cleaned);
@@ -86,28 +80,22 @@ let unit_tests =
          "map" >:: test_map;
        ]
 
-let dict_gen =
-  QCheck.Gen.(
-    list (pair small_int small_int) >>= fun l -> return (dict_from_list l))
-
+let dict_gen = QCheck.Gen.(list (pair small_int small_int) >>= fun l -> return (dict_from_list l))
 let dict_arbitrary = QCheck.make dict_gen ~print:(fun _ -> "<dict>")
 
 let prop_insert_find =
-  Test.make ~name:"Property: Insert & Find" ~count:1000
-    (triple dict_arbitrary small_int small_int) (fun (d, k, v) ->
+  Test.make ~name:"Property: Insert & Find" ~count:1000 (triple dict_arbitrary small_int small_int) (fun (d, k, v) ->
       let d_new = Dict.add k v d in
       match Dict.find_opt k d_new with Some found -> found = v | None -> false)
 
 let prop_monoid_identity =
-  Test.make ~name:"Property: Monoid Identity" ~count:500 dict_arbitrary
-    (fun d ->
+  Test.make ~name:"Property: Monoid Identity" ~count:500 dict_arbitrary (fun d ->
       let u_left = Dict.union Dict.empty d in
       let u_right = Dict.union d Dict.empty in
       dict_eq Int.compare d u_left && dict_eq Int.compare d u_right)
 
 let prop_monoid_assoc =
-  Test.make ~name:"Property: Monoid Associativity" ~count:500
-    (triple dict_arbitrary dict_arbitrary dict_arbitrary) (fun (a, b, c) ->
+  Test.make ~name:"Property: Monoid Associativity" ~count:500 (triple dict_arbitrary dict_arbitrary dict_arbitrary) (fun (a, b, c) ->
       let left = Dict.union (Dict.union a b) c in
       let right = Dict.union a (Dict.union b c) in
 

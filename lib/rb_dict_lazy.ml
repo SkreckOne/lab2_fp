@@ -23,182 +23,48 @@ end
 module Make (Key : OrderedType) : S with type key = Key.t = struct
   type key = Key.t
   type color = Red | Black
-
-  type 'a tree =
-    | Leaf
-    | Node of {
-        color : color;
-        left : 'a tree;
-        key : key;
-        value : 'a;
-        is_deleted : bool;
-        right : 'a tree;
-      }
-
+  type 'a tree = Leaf | Node of { color : color; left : 'a tree; key : key; value : 'a; is_deleted : bool; right : 'a tree }
   type 'a t = { root : 'a tree; active : int; total : int }
 
   let empty = { root = Leaf; active = 0; total = 0 }
   let is_empty t = t.active = 0
 
+  [@@@ocamlformat "disable"]
+
   let balance color left key value is_deleted right =
+    let make_balanced a kx vx dx b ky vy dy c kz vz dz d =
+      Node
+        {
+          color = Red;
+          left = Node { color = Black; left = a; key = kx; value = vx; is_deleted = dx; right = b };
+          key = ky;
+          value = vy;
+          is_deleted = dy;
+          right = Node { color = Black; left = c; key = kz; value = vz; is_deleted = dz; right = d };
+        }
+    in
+
     match (color, left, key, value, is_deleted, right) with
-    | ( Black,
-        Node
-          {
-            color = Red;
-            left =
-              Node
-                {
-                  color = Red;
-                  left = a;
-                  key = kx;
-                  value = vx;
-                  is_deleted = dx;
-                  right = b;
-                };
-            key = ky;
-            value = vy;
-            is_deleted = dy;
-            right = c;
-          },
-        kz,
-        vz,
-        dz,
-        d )
-    | ( Black,
-        Node
-          {
-            color = Red;
-            left = a;
-            key = kx;
-            value = vx;
-            is_deleted = dx;
-            right =
-              Node
-                {
-                  color = Red;
-                  left = b;
-                  key = ky;
-                  value = vy;
-                  is_deleted = dy;
-                  right = c;
-                };
-          },
-        kz,
-        vz,
-        dz,
-        d )
-    | ( Black,
-        a,
-        kx,
-        vx,
-        dx,
-        Node
-          {
-            color = Red;
-            left =
-              Node
-                {
-                  color = Red;
-                  left = b;
-                  key = ky;
-                  value = vy;
-                  is_deleted = dy;
-                  right = c;
-                };
-            key = kz;
-            value = vz;
-            is_deleted = dz;
-            right = d;
-          } )
-    | ( Black,
-        a,
-        kx,
-        vx,
-        dx,
-        Node
-          {
-            color = Red;
-            left = b;
-            key = ky;
-            value = vy;
-            is_deleted = dy;
-            right =
-              Node
-                {
-                  color = Red;
-                  left = c;
-                  key = kz;
-                  value = vz;
-                  is_deleted = dz;
-                  right = d;
-                };
-          } ) ->
-        Node
-          {
-            color = Red;
-            left =
-              Node
-                {
-                  color = Black;
-                  left = a;
-                  key = kx;
-                  value = vx;
-                  is_deleted = dx;
-                  right = b;
-                };
-            key = ky;
-            value = vy;
-            is_deleted = dy;
-            right =
-              Node
-                {
-                  color = Black;
-                  left = c;
-                  key = kz;
-                  value = vz;
-                  is_deleted = dz;
-                  right = d;
-                };
-          }
-    | color, left, key, value, is_deleted, right ->
-        Node { color; left; key; value; is_deleted; right }
+    | Black, Node { color=Red; left=Node {color=Red; left=a; key=kx; value=vx; is_deleted=dx; right=b}; key=ky; value=vy; is_deleted=dy; right=c }, kz, vz, dz, d
+    | Black, Node { color=Red; left=a; key=kx; value=vx; is_deleted=dx; right=Node {color=Red; left=b; key=ky; value=vy; is_deleted=dy; right=c} }, kz, vz, dz, d
+    | Black, a, kx, vx, dx, Node { color=Red; left=Node {color=Red; left=b; key=ky; value=vy; is_deleted=dy; right=c}; key=kz; value=vz; is_deleted=dz; right=d }
+    | Black, a, kx, vx, dx, Node { color=Red; left=b; key=ky; value=vy; is_deleted=dy; right=Node {color=Red; left=c; key=kz; value=vz; is_deleted=dz; right=d} }
+      ->
+        make_balanced a kx vx dx b ky vy dy c kz vz dz d
+
+    | c, l, k, v, del, r -> Node { color = c; left = l; key = k; value = v; is_deleted = del; right = r }
+
+  [@@@ocamlformat "enable"]
 
   let internal_add key value tree =
     let rec ins t =
       match t with
-      | Leaf ->
-          Node
-            {
-              color = Red;
-              left = Leaf;
-              key;
-              value;
-              is_deleted = false;
-              right = Leaf;
-            }
-      | Node
-          {
-            color = c;
-            left = l;
-            key = k;
-            value = v;
-            is_deleted = del;
-            right = r;
-          } ->
+      | Leaf -> Node { color = Red; left = Leaf; key; value; is_deleted = false; right = Leaf }
+      | Node { color = c; left = l; key = k; value = v; is_deleted = del; right = r } ->
           let cmp = Key.compare key k in
           if cmp < 0 then balance c (ins l) k v del r
           else if cmp > 0 then balance c l k v del (ins r)
-          else
-            Node
-              {
-                color = c;
-                left = l;
-                key = k;
-                value;
-                is_deleted = false;
-                right = r;
-              }
+          else Node { color = c; left = l; key = k; value; is_deleted = false; right = r }
     in
     match ins tree with Node r -> Node { r with color = Black } | Leaf -> Leaf
 
@@ -207,55 +73,17 @@ module Make (Key : OrderedType) : S with type key = Key.t = struct
     | Leaf -> None
     | Node { left = l; key = k; value = v; is_deleted = del; right = r; _ } ->
         let cmp = Key.compare key k in
-        if cmp < 0 then internal_find_opt key l
-        else if cmp > 0 then internal_find_opt key r
-        else if del then None
-        else Some v
+        if cmp < 0 then internal_find_opt key l else if cmp > 0 then internal_find_opt key r else if del then None else Some v
 
   let internal_remove key t =
     let rec loop t =
       match t with
       | Leaf -> Leaf
-      | Node
-          {
-            color = c;
-            left = l;
-            key = k;
-            value = v;
-            is_deleted = del;
-            right = r;
-          } ->
+      | Node { color = c; left = l; key = k; value = v; is_deleted = del; right = r } ->
           let cmp = Key.compare key k in
-          if cmp < 0 then
-            Node
-              {
-                color = c;
-                left = loop l;
-                key = k;
-                value = v;
-                is_deleted = del;
-                right = r;
-              }
-          else if cmp > 0 then
-            Node
-              {
-                color = c;
-                left = l;
-                key = k;
-                value = v;
-                is_deleted = del;
-                right = loop r;
-              }
-          else
-            Node
-              {
-                color = c;
-                left = l;
-                key = k;
-                value = v;
-                is_deleted = true;
-                right = r;
-              }
+          if cmp < 0 then Node { color = c; left = loop l; key = k; value = v; is_deleted = del; right = r }
+          else if cmp > 0 then Node { color = c; left = l; key = k; value = v; is_deleted = del; right = loop r }
+          else Node { color = c; left = l; key = k; value = v; is_deleted = true; right = r }
     in
     loop t
 
@@ -272,14 +100,10 @@ module Make (Key : OrderedType) : S with type key = Key.t = struct
     | Leaf -> false
     | Node { left = l; key = k; right = r; _ } ->
         let cmp = Key.compare key k in
-        if cmp < 0 then mem_physical key l
-        else if cmp > 0 then mem_physical key r
-        else true
+        if cmp < 0 then mem_physical key l else if cmp > 0 then mem_physical key r else true
 
   let rebuild t =
-    let new_root =
-      internal_fold (fun k v acc -> internal_add k v acc) t.root Leaf
-    in
+    let new_root = internal_fold (fun k v acc -> internal_add k v acc) t.root Leaf in
     { root = new_root; active = t.active; total = t.active }
 
   let find_opt key t = internal_find_opt key t.root
@@ -304,8 +128,7 @@ module Make (Key : OrderedType) : S with type key = Key.t = struct
         let new_active = t.active - 1 in
         let new_t = { root = new_root; total = t.total; active = new_active } in
 
-        if new_t.total > 2 * new_t.active && new_t.active > 0 then rebuild new_t
-        else new_t
+        if new_t.total > 2 * new_t.active && new_t.active > 0 then rebuild new_t else new_t
 
   let fold f t acc = internal_fold f t.root acc
   let union t1 t2 = fold (fun k v acc -> add k v acc) t1 t2
@@ -314,14 +137,7 @@ module Make (Key : OrderedType) : S with type key = Key.t = struct
     let rec internal_map t =
       match t with
       | Leaf -> Leaf
-      | Node ({ left = l; value = v; right = r; _ } as node_record) ->
-          Node
-            {
-              node_record with
-              left = internal_map l;
-              value = f v;
-              right = internal_map r;
-            }
+      | Node ({ left = l; value = v; right = r; _ } as node_record) -> Node { node_record with left = internal_map l; value = f v; right = internal_map r }
     in
     { t with root = internal_map t.root }
 
@@ -329,18 +145,10 @@ module Make (Key : OrderedType) : S with type key = Key.t = struct
     let rec internal_filter t =
       match t with
       | Leaf -> Leaf
-      | Node
-          ({ left = l; key = k; value = v; is_deleted = del; right = r; _ } as
-           node) ->
+      | Node ({ left = l; key = k; value = v; is_deleted = del; right = r; _ } as node) ->
           let should_keep = predicate k v in
           let new_del = del || not should_keep in
-          Node
-            {
-              node with
-              left = internal_filter l;
-              is_deleted = new_del;
-              right = internal_filter r;
-            }
+          Node { node with left = internal_filter l; is_deleted = new_del; right = internal_filter r }
     in
     let filtered_root = internal_filter t.root in
     let temp_t = { root = filtered_root; active = 0; total = t.total } in
