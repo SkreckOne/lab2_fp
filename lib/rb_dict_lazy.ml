@@ -52,7 +52,7 @@ module Make (Key : OrderedType) : S with type key = Key.t = struct
       ->
         make_balanced a kx vx dx b ky vy dy c kz vz dz d
 
-    | c, l, k, v, del, r -> Node { color = c; left = l; key = k; value = v; is_deleted = del; right = r }
+    | color, left, key, value, is_deleted, right -> Node { color; left; key; value; is_deleted; right }
 
   [@@@ocamlformat "enable"]
 
